@@ -11,14 +11,6 @@ import (
 )
 
 func main(){
-	// fmt.Println("\n")
-	fmt.Println("frequester tool By tojojo !!")
-	fmt.Println("\\__(-_-)__/")
-	// fmt.Println("\n")
-
-	colorReset := "\033[0m"
-	colorRed := "\033[31m"
-    colorGreen := "\033[32m"
 
 
 	sc := bufio.NewScanner(os.Stdin)
@@ -45,9 +37,7 @@ func main(){
 	   			check_result := strings.Contains(sb , "alert(1)")
 	   			// fmt.Println(check_result)
 	   			if check_result != false {
-	   				fmt.Println(string(colorRed),"Vulnerable To XSS:", domain,string(colorReset))
-	   			}else{
-	   				fmt.Println(string(colorGreen),"Not Vulnerable To XSS:", domain, string(colorReset))
+	   				fmt.Println(domain)
 	   			}
 
 			}
