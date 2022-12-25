@@ -1,12 +1,14 @@
 # frequest
 This is go CLI tool for send fast Multiple  get HTTP request.
+forked from https://github.com/takshal/freq and I modified it to print only suspected endpoints for saving to text file
 
 # How to Use?
-you can use this tool for findings xss and sql injection vulnerablity from multi URL.
+`echo domain | waybackurls | gf xss | qsreplace '"><img src=x onerror=alert(1);>' | freq | tee -a xss-vuln.txt`
 
 # How to Install?
-go get -u https://github.com/takshal/freq
+```
+go install -v github.com/aliyugombe/freq
+```
 
-
-# smart Use
-Using qsreplace you can add your xss payload in every perementer then you can use this tool to find vulnerablity.
+# Credit
+Credit goes to takshal tojojo https://github.com/takshal/freq for bringing the first idea
