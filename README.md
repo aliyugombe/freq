@@ -7,7 +7,7 @@ forked from https://github.com/takshal/freq and I modified it to print only susp
 
 # How to Install?
 ```
-go install -v github.com/aliyugombe/freq
+go install -v github.com/aliyugombe/freq@latest
 ```
 
 # Credit
